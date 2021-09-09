@@ -6,14 +6,15 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Index</title>
-<link href="css/style_index.css" rel="stylesheet"/>
+<title>매일매점 - 로그인</title>
+<link href="css/style_login.css" rel="stylesheet"/>
 </head>
 <body>
-	<h1>인덱스다 임뫄~</h1>
-	<hr>
-	<!-- 임시 고객 링크 (나중에 지울거임) -->
-	<a href="/login_form">로그인 폼 이동</a><br>
-	<a href="/signup_form">회원강비 폼 이동</a><br>
+	<form method="post" action="login">
+		<h3>로그인</h3>
+		아이디 : <input type="text" name="userid"><br>
+		비밀번호 : <input type="password" name="passwd"><br>
+		<button type="submit">확인</button>
+	</form>
 </body>
 </html>

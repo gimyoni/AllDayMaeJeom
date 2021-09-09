@@ -3,52 +3,30 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- <mapper namespace="member">
-	<select id="list" resultType="kr.hs.study.model.dto.MemberDTO">
-		select * from member
-	</select>
+<mapper namespace="customer">
 
-	<insert id="insert">
-		insert into member(userid, passwd, name, email) values(#{userid}, #{passwd}, #{name}, #{email}) 
+	<insert id="signup">
+		insert into customer(userid, passwd, name, student_num, enter_year, point) values(#{userid}, #{passwd}, #{name}, #{student_num}, #{enter_year}, 0) 
 	</insert>
 	
-	<select id="read" resultType="kr.hs.study.model.dto.MemberDTO">
-		select * from member where userid=#{userid}
+	<select id="login">
+		select count(*) from customer where userid=#{userid} and passwd=#{passwd}
 	</select>
 	
-	<select id="check" resultType="int">
-		select count(*) from member where userid=#{userid} and passwd=#{passwd}
+	<select id="duplicate" parameterType="java.lang.String" resultType="java.lang.Integer">
+		select count(*) from customer where userid=#{userid}
 	</select>
 	
-	<update id="update" parameterType="kr.hs.study.model.dto.MemberDTO">
-		update member set name=#{name}, email=#{email} where userid=#{userid}
+	<select id="read" resultType="kr.hs.maejeom.model.dto.CustomerDTO">
+		select * from customer where userid=#{userid}
+	</select>
+	
+	<update id="update" parameterType="kr.hs.maejeom.model.dto.CustomerDTO">
+		update customer set name=#{name}, student_num=#{student_num}, enter_year=#{enter_year} where userid=#{userid}
 	</update>
 	
-	<delete id="delete" parameterType="kr.hs.study.model.dto.MemberDTO">
+	<delete id="delete" parameterType="kr.hs.maejeom.model.dto.CustomerDTO">
 		delete from * where userid=#{userid}
 	</delete>
 	
-</mapper>  -->
-
-<!-- <mapper namespace="product">
-	<select id="list" resultType="kr.hs.study.model.dto.ProductDTO">
-		select * from product
-	</select>
-
-	<insert id="insert">
-		insert into product(product_id, product_name, price, picture_url) values(#{product_id}, #{product_name}, #{price}, #{picture_url}) 
-	</insert>
-	
-	<select id="read" resultType="kr.hs.study.model.dto.ProductDTO">
-		select * from product where product_id=#{product_id}
-	</select>
-	
-	<update id="update" parameterType="kr.hs.study.model.dto.ProductDTO">
-		update product set product_name=#{product_name}, picture_url=#{picture_url} where product_id=#{product_id}
-	</update>
-	
-	<delete id="delete" parameterType="kr.hs.study.model.dto.ProductDTO">
-		delete from * where product_id=#{product_id}
-	</delete>
-	
-</mapper>  -->
+</mapper>
