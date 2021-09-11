@@ -9,5 +9,5 @@ public interface ProductService {
 	public List<ProductDTO> category_list(String category);
 	public List<ProductDTO> search(String name);
 	public List<ProductDTO> price_search(int start, int end);
-	public ProductDTO detail();
+	public ProductDTO detail(int id);
 }

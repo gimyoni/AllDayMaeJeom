@@ -34,8 +34,8 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 
 	@Override
-	public ProductDTO detail() {
-		return null;
+	public ProductDTO detail(int id) {
+		return session.selectOne("product.detail", id);
 	}
 
 }

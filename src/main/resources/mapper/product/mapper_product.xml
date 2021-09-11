@@ -7,4 +7,7 @@
 	<select id="list" resultType="kr.hs.maejeom.model.dto.ProductDTO">
 		select id, name, price, img_src from maejeom_product
 	</select>
+	<select id="detail" resultType="kr.hs.maejeom.model.dto.ProductDTO">
+		select * from maejeom_product where id=#{id}
+	</select>
 </mapper>
