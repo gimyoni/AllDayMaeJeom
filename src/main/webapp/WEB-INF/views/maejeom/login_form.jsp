@@ -7,7 +7,9 @@
 <head>
 <meta charset="EUC-KR">
 <title>매일매점 - 로그인</title>
-<link href="css/customer/style_login_form.css" rel="stylesheet"/>
+<link href="css/style_login_form.css" rel="stylesheet"/>
+<link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+<link rel="icon" href="image/logo.ico" type="image/x-icon">
 </head>
 <body>
 	<div class="login_form">

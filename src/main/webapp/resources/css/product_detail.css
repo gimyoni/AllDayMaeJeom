@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
 * {
 	text-decoration: none;
 	margin: 0;
@@ -24,6 +26,7 @@ body {
 	background : green;
 	width: 100%;
 	height: 100%;
+	font-family: 'Gowun Dodum', sans-serif;
 }
 
 #content_detail {
@@ -31,6 +34,7 @@ body {
 	background: white;
 	border: 1px solid black;
 	display: flex;
+	font-family: 'Gowun Dodum', sans-serif;
 }
 
 #content_detail #product_img {

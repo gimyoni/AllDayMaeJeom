@@ -5,6 +5,8 @@
 <head>
 <meta charset="EUC-KR">
 <title>매일매점 - 마이페이지</title>
+<link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+<link rel="icon" href="image/logo.ico" type="image/x-icon">
 </head>
 <body>
 	이름 <span>${dto.name }</span><br>

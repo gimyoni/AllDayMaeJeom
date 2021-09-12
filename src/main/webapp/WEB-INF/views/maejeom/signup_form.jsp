@@ -7,17 +7,21 @@
 <head>
 <meta charset="EUC-KR">
 <title>매일매점 - 회원가입</title>
-<link href="css/customer/style_sign_form.css" rel="stylesheet"/>
+<link href="css/style_signup_form.css" rel="stylesheet"/>
+<link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+<link rel="icon" href="image/logo.ico" type="image/x-icon">
 </head>
 <body>
-	<form method="post" action="/signup">
-		<h3>회원가입</h3>
-		아이디 : <input type="text" name="userid"><br>
-		비밀번호 : <input type="password" name="passwd"><br>
-		이름 : <input type="text" name="name"><br>
-		학번 : <input type="number" name="student_num"><br>
-		입학년도(XXXX) : <input type="number" name="enter_year"><br>
-		<button type="submit">가입하기</button>
-	</form>
+	<div class="signup_form">
+		<form method="post" action="/signup">
+			<p id="signup_title">회원가입</p>
+			<span>아이디</span> <input type="text" name="userid"><br>
+			<span>비밀번호</span> <input type="password" name="passwd"><br>
+			<span>이름</span> <input type="text" name="name"><br>
+			<span>학번</span> <input type="number" name="student_num"><br>
+			<span>입학년도</span> <input type="number" name="enter_year"><br>
+			<button type="submit" class="submit_btn">가입하기</button>
+		</form>
+	</div>
 </body>
 </html>
