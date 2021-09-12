@@ -7,7 +7,7 @@
 <head>
 <meta charset="EUC-KR">
 <title>매일매점 - 회원가입</title>
-<link href="css/style_signup_form.css" rel="stylesheet"/>
+<link href="css/customer/style_sign_form.css" rel="stylesheet"/>
 </head>
 <body>
 	<form method="post" action="/signup">
