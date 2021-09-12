@@ -16,19 +16,19 @@
 	<div class="gnb-container">
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" id="header">
 			<!-- Brand/logo -->
-			<a class="navbar-brand" href="#"> <img src="image/logo.png" alt="logo"
+			<a class="navbar-brand" href="/"> <img src="image/logo.png" alt="logo"
 				style="width: 40px;">
 			</a>
 
 			<!-- Links -->
 			<ul class="navbar-nav">
-				<li class="nav-item"><a class="nav-link" href="#">전체</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">즉석조리</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">과자</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">음료</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">아이스크림</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">생활용품</a></li>
-				<li class="nav-item"><a class="nav-link" href="#">기타</a></li>
+				<li class="nav-item"><a class="nav-link" href="/">전체</a></li>
+				<li class="nav-item"><a class="nav-link" href="/instant">즉석조리</a></li>
+				<li class="nav-item"><a class="nav-link" href="/snack">과자</a></li>
+				<li class="nav-item"><a class="nav-link" href="/drink">음료</a></li>
+				<li class="nav-item"><a class="nav-link" href="/icecream">아이스크림</a></li>
+				<li class="nav-item"><a class="nav-link" href="/necessity">생활용품</a></li>
+				<li class="nav-item"><a class="nav-link" href="/etc">기타</a></li>
 			</ul>
 		</nav>
 	</div>

@@ -34,8 +34,18 @@ public class ProductServiceImpl implements ProductService {
 	}
 
 	@Override
-	public ProductDTO detail() {
-		return null;
+	public ProductDTO detail(int id) {
+		return dao.detail(id);
+	}
+
+	@Override
+	public void good(int id) {
+		dao.good(id);
+	}
+
+	@Override
+	public void bad(int id) {
+		dao.bad(id);
 	}
 
 }

@@ -34,8 +34,19 @@ public class ProductDAOImpl implements ProductDAO {
 	}
 
 	@Override
-	public ProductDTO detail() {
-		return null;
+	public ProductDTO detail(int id) {
+		return session.selectOne("product.detail", id);
+	}
+
+	@Override
+	public void good(int id) {
+		session.update("product.good", id);
+	}
+
+	@Override
+	public void bad(int id) {
+		session.update("product.bad", id);
+		
 	}
 
 }

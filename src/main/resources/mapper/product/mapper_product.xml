@@ -7,4 +7,13 @@
 	<select id="list" resultType="kr.hs.maejeom.model.dto.ProductDTO">
 		select id, name, price, img_src from maejeom_product
 	</select>
+	<select id="detail" resultType="kr.hs.maejeom.model.dto.ProductDTO">
+		select * from maejeom_product where id=#{id}
+	</select>
+	<update id="good">
+		update maejeom_product set good=good+1 where id=#{id}
+	</update>
+	<update id="bad">
+		update maejeom_product set bad=bad+1 where id=#{id}
+	</update>
 </mapper>
