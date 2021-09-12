@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link href="css/product_detail.css" rel="stylesheet" />
+<link rel="shortcut icon" href="image/logo.ico" type="image/x-icon">
+<link rel="icon" href="image/logo.ico" type="image/x-icon">
 </head>
 <body>
 	<jsp:include page="../include/menu.jsp"></jsp:include>
