@@ -31,7 +31,7 @@
 							<span>${ dto.bad }</span>
 						</div>
 					</div>
-					<button>예약하기</button>
+					<button class="order_btn">예약하기</button>
 				</div>
 			</div>
 		</div>
