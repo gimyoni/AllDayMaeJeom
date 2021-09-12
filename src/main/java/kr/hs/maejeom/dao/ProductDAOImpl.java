@@ -38,4 +38,15 @@ public class ProductDAOImpl implements ProductDAO {
 		return session.selectOne("product.detail", id);
 	}
 
+	@Override
+	public void good(int id) {
+		session.update("product.good", id);
+	}
+
+	@Override
+	public void bad(int id) {
+		session.update("product.bad", id);
+		
+	}
+
 }

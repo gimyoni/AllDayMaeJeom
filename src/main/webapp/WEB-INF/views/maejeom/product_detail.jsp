@@ -20,11 +20,11 @@
 				<p id="product_price">${ dto.price }원</p>
 				<div id="bottom">
 					<div id="reaction">
-						<div class="reaction_content">
+						<div class="reaction_content" onclick="location.href='/good?id=${dto.id}'">
 							<img alt="good" src="image/reaction/good.png" onmouseover="hover(this, 'good')" onmouseout="unhover(this, 'good')">
 							<span>${ dto.good }</span>
 						</div>
-						<div class="reaction_content">
+						<div class="reaction_content" onclick="location.href='/bad?id=${dto.id}'">
 							<img alt="bad" src="image/reaction/bad.png" onmouseover="hover(this, 'bad')" onmouseout="unhover(this, 'bad')">
 							<span>${ dto.bad }</span>
 						</div>
