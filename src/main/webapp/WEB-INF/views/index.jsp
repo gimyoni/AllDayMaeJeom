@@ -73,7 +73,7 @@
 						<img alt="${ product.name }" src="image/product/${ product.img_src }">
 					</div>
 					<span class="product_name">${ product.name }</span><br> 
-					<span class="product_price">${ product.price }원</span>
+					<span class="product_price">${ product.price }원</span><br>
 				</div>
 			</c:forEach>
 		</div>

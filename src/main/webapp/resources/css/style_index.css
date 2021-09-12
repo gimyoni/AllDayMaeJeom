@@ -23,6 +23,7 @@ body {
 #products .product {
 	width: 200px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 #products .product:hover {
 	box-shadow: 0 0 0 1px black inset;
