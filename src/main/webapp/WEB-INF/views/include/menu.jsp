@@ -43,6 +43,7 @@
 				<li class="nav-item"><a class="nav-link"></a></li>
 				<li class="nav-item"><a class="nav-link" href="/login_form">로그인</a></li>
 				<li class="nav-item"><a class="nav-link" href="/signup_form">회원가입</a></li>
+				<li class="nav-item"><a class="nav-link" href="/manager_login_form">관리자</a></li>
 			</ul>
 		</nav>
 	</div>
